@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ポートフォリオ | システムエンジニア</title>
+    <meta
+      name="description"
+      content="株式会社システムネットワークで官庁系システムやデータ分析基盤、ECサイトなどの開発に携わるシステムエンジニアのポートフォリオサイトです。スキル、プロジェクト実績、お問い合わせ情報を掲載しています。"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- ヘッダー -->
+    <header>
+      <nav class="navbar">
+        <div class="container">
+          <div class="logo">システムエンジニア ポートフォリオ</div>
+          <ul class="nav-menu">
+            <li><a href="#about">自己紹介</a></li>
+            <li><a href="#projects">プロジェクト</a></li>
+            <li>
+              <a href="#contact">お問い合わせ</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <!-- メインコンテンツ -->
+    <main>
+      <!-- ヒーローセクション -->
+      <section class="hero">
+        <div class="container">
+          <h1 class="hero-title">システムエンジニア ポートフォリオ</h1>
+          <p class="hero-subtitle">高品質なソリューションを提供します</p>
+          <img
+            src="computer_programming_man.png"
+            alt="パソコンでプログラミングをしているシステムエンジニアのイラスト"
+            style="max-width: 320px; width: 100%; height: auto; margin: 1.5rem auto 0; display: block;"
+          />
+        </div>
+      </section>
+      <!-- 自己紹介セクション -->
+      <section id="about" class="about">
+        <div class="container">
+          <h2 class="section-title">自己紹介</h2>
+          <p class="about-intro-text">
+            株式会社システムネットワークで、官庁系システムからECサイト、データ分析プラットフォームまで幅広い領域のシステム開発に携わってきました。
+            要件定義から設計・実装・テスト・保守まで一貫して対応し、「ビジネス目線で使われるシステム」を意識して開発することを大切にしています。
+          </p>
+          <div class="about-content">
+            <div class="about-card">
+              <h3>基本情報</h3>
+              <ul>
+                <li><strong>会社名:</strong> 株式会社システムネットワーク</li>
+                <li><strong>職種:</strong> システムエンジニア</li>
+                <li><strong>学歴:</strong> 情報工学科 卒業</li>
+                <li><strong>経験年数:</strong> 5年以上</li>
+              </ul>
+            </div>
+            <div class="about-card">
+              <h3>スキル・言語</h3>
+              <div class="skills">
+                <div class="skill-category skill-category--lang">
+                  <div class="skill-tag-list">
+                    <span class="skill-tag">C++</span>
+                    <span class="skill-tag">Java</span>
+                    <span class="skill-tag">C#</span>
+                    <span class="skill-tag">VB6</span>
+                  </div>
+                </div>
+                <div class="skill-category skill-category--web">
+                  <div class="skill-tag-list">
+                    <span class="skill-tag">JavaScript</span>
+                    <span class="skill-tag">JSP</span>
+                  </div>
+                </div>
+                <div class="skill-category skill-category--markup">
+                  <div class="skill-tag-list">
+                    <span class="skill-tag">HTML</span>
+                    <span class="skill-tag">CSS</span>
+                  </div>
+                </div>
+                <div class="skill-category skill-category--db">
+                  <div class="skill-tag-list">
+                    <span class="skill-tag">SQL</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="about-card">
+              <h3>資格</h3>
+              <ul>
+                <li>基本情報技術者</li>
+                <li>応用情報技術者</li>
+                <li>Oracle Certified Java Programmer</li>
+                <li>AWS Certified Solutions Architect</li>
+              </ul>
+            </div>
+            <div class="about-card">
+              <h3>コラボレーションツール</h3>
+              <div class="collab-tools">
+                <div class="collab-category collab-category--pm">
+                  <div class="tool-tag-list">
+                    <span class="tool-tag">REDMINE</span>
+                    <span class="tool-tag">TAIGA</span>
+                  </div>
+                </div>
+                <div class="collab-category collab-category--vcs">
+                  <div class="tool-tag-list">
+                    <span class="tool-tag">TortoiseSVN</span>
+                    <span class="tool-tag">GitLab</span>
+                  </div>
+                </div>
+                <div class="collab-category collab-category--communication">
+                  <div class="tool-tag-list">
+                    <span class="tool-tag">Microsoft Teams</span>
+                    <span class="tool-tag">Zoom</span>
+                    <span class="tool-tag">Mattermost</span>
+                    <span class="tool-tag">Slack</span>
+                  </div>
+                </div>
+                <div class="collab-category collab-category--storage">
+                  <div class="tool-tag-list">
+                    <span class="tool-tag">Box</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- プロジェクト紹介セクション -->
+      <section id="projects" class="projects">
+        <div class="container">
+          <h2 class="section-title">プロジェクト紹介</h2>
+          <div class="projects-grid">
+            <div class="projects-container">
+              <div class="project-card active">
+                <div class="project-icon">📊</div>
+                <h3>プロジェクトA</h3>
+                <p class="project-description">
+                  企業向けデータ分析プラットフォームの開発。Pythonと機械学習を活用し、ビッグデータの可視化と予測分析機能を実装しました。
+                </p>
+                <ul class="project-meta">
+                  <li><strong>期間:</strong> 2023/04 〜 2024/03</li>
+                  <li>
+                    <strong>担当フェーズ:</strong> 要件定義 / 基本設計 / 実装 /
+                    テスト
+                  </li>
+                  <li>
+                    <strong>役割:</strong> テックリード /
+                    アプリケーションアーキテクト
+                  </li>
+                  <li>
+                    <strong>成果:</strong> 分析レポート作成工数を約40%削減
+                  </li>
+                </ul>
+                <div class="project-tech">
+                  <span class="tech-tag">Python</span
+                  ><span class="tech-tag">React</span
+                  ><span class="tech-tag">PostgreSQL</span>
+                </div>
+              </div>
+              <div class="project-card">
+                <div class="project-icon">🛒</div>
+                <h3>プロジェクトB</h3>
+                <p class="project-description">
+                  ECサイトのバックエンドAPI開発。マイクロサービスアーキテクチャを採用し、高可用性とスケーラビリティを実現しました。
+                </p>
+                <ul class="project-meta">
+                  <li><strong>期間:</strong> 2022/01 〜 2023/03</li>
+                  <li>
+                    <strong>担当フェーズ:</strong> 詳細設計 / 実装 / 結合テスト
+                    / 運用保守
+                  </li>
+                  <li><strong>役割:</strong> バックエンドエンジニア</li>
+                  <li>
+                    <strong>成果:</strong> 障害発生件数を前年度比で約60%削減
+                  </li>
+                </ul>
+                <div class="project-tech">
+                  <span class="tech-tag">Java</span
+                  ><span class="tech-tag">Spring Boot</span
+                  ><span class="tech-tag">Docker</span>
+                </div>
+              </div>
+              <div class="project-card">
+                <div class="project-icon">📱</div>
+                <h3>プロジェクトC</h3>
+                <p class="project-description">
+                  モバイルアプリケーションの開発。React
+                  Nativeを使用し、iOS/Android両対応のクロスプラットフォームアプリを構築しました。
+                </p>
+                <ul class="project-meta">
+                  <li><strong>期間:</strong> 2021/04 〜 2021/12</li>
+                  <li>
+                    <strong>担当フェーズ:</strong> 実装 / 単体テスト /
+                    ストア公開支援
+                  </li>
+                  <li><strong>役割:</strong> モバイルアプリエンジニア</li>
+                  <li>
+                    <strong>成果:</strong>
+                    初回リリースから3ヶ月で1万ダウンロードを達成
+                  </li>
+                </ul>
+                <div class="project-tech">
+                  <span class="tech-tag">React Native</span
+                  ><span class="tech-tag">TypeScript</span
+                  ><span class="tech-tag">Firebase</span>
+                </div>
+              </div>
+              <div class="project-card">
+                <div class="project-icon">💻</div>
+                <h3>プロジェクトD</h3>
+                <p class="project-description">
+                  官庁系システム開発プロジェクト。C++を使用し、システムの開発と保守を行いました。
+                </p>
+                <ul class="project-meta">
+                  <li><strong>期間:</strong> 2019/04 〜 2021/03</li>
+                  <li><strong>担当フェーズ:</strong> 詳細設計 / 実装 / 保守</li>
+                  <li><strong>役割:</strong> アプリケーションエンジニア</li>
+                  <li>
+                    <strong>成果:</strong>
+                    長期安定稼働に貢献（重大障害ゼロを継続）
+                  </li>
+                </ul>
+                <div class="project-tech">
+                  <span class="tech-tag">C++</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- お問い合わせフォームセクション -->
+      <section id="contact" class="contact">
+        <div class="container">
+          <h2 class="section-title">お問い合わせ</h2>
+          <form id="contactForm" class="contact-form">
+            <div class="form-group">
+              <label for="name">名前 <span class="required">*</span></label>
+              <input type="text" id="name" name="name" required />
+              <span class="error-message" id="nameError"></span>
+            </div>
+            <div class="form-group">
+              <label for="email"
+                >メールアドレス <span class="required">*</span></label
+              >
+              <input type="email" id="email" name="email" required />
+              <span class="error-message" id="emailError"></span>
+            </div>
+            <div class="form-group">
+              <label for="message"
+                >メッセージ <span class="required">*</span></label
+              >
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                required
+              ></textarea>
+              <span class="error-message" id="messageError"></span>
+            </div>
+            <button type="submit" class="submit-btn">送信</button>
+            <div id="formMessage" class="form-message"></div>
+          </form>
+          <p class="form-note">
+            ※
+            現在このフォームはデモ用のため、入力内容は実際のメール送信は行われません。
+          </p>
+        </div>
+      </section>
+    </main>
+    <!-- フッター -->
+    <footer>
+      <div class="container">
+        <p>
+          &copy; 2024 株式会社システムネットワーク / システムエンジニア
+          ポートフォリオ
+        </p>
+        <p>Contact: example@example.com</p>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
