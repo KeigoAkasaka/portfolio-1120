@@ -77,7 +77,7 @@ header {
 
 /* ヒーローセクション */
 .hero {
-    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    background: linear-gradient(120deg, rgba(17,24,39,0.98) 60%, rgba(31,41,55,0.95) 100%), url('computer_programming_man.png') center/cover no-repeat;
     color: white;
     padding: 5rem 0;
     text-align: center;
@@ -130,6 +130,7 @@ section {
     border-radius: 8px;
     box-shadow: var(--shadow);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 2rem;
 }
 
 .about-card:hover {
@@ -249,40 +250,21 @@ section {
 }
 
 .projects-grid {
-    position: relative;
-    min-height: 400px;
-    overflow: hidden;
-}
-
-.projects-container {
-    position: relative;
-    width: 100%;
-    min-height: 400px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  gap: 2rem;
 }
 
 .project-card {
-    width: 100%;
-    max-width: 100%;
-    opacity: 0;
-    transform: translateX(100%);
-    transition: opacity 0.8s ease, transform 0.8s ease;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
+  white-space: nowrap;
+  overflow-x: auto;
 }
 
-.project-card.active {
-    opacity: 1;
-    transform: translateX(0);
-    position: relative;
-    z-index: 2;
-}
-
+/* アニメーション関連の不要なcssを除去 */
+.projects-container,
+.project-card.active,
 .project-card.slide-out {
-    opacity: 0;
-    transform: translateX(-100%);
-    z-index: 1;
+  all: unset;
 }
 
 .project-card {
@@ -295,7 +277,7 @@ section {
 }
 
 .project-icon {
-    font-size: 3rem;
+    font-size: 5rem;
     margin-bottom: 1rem;
 }
 

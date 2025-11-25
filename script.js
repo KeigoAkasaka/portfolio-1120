@@ -166,39 +166,3 @@ messageInput.addEventListener('input', function() {
     }
 });
 
-// プロジェクトスライドアニメーション
-function initProjectSlider() {
-    const projectCards = document.querySelectorAll('.project-card');
-    let currentIndex = 0;
-    
-    if (projectCards.length === 0) return;
-    
-    function showNextProject() {
-        // 現在のカードを非表示にする
-        projectCards[currentIndex].classList.remove('active');
-        projectCards[currentIndex].classList.add('slide-out');
-        
-        // 次のインデックスを計算
-        currentIndex = (currentIndex + 1) % projectCards.length;
-        
-        // 少し遅延を入れてから次のカードを表示
-        setTimeout(() => {
-            // すべてのカードからクラスを削除
-            projectCards.forEach(card => {
-                card.classList.remove('active', 'slide-out');
-            });
-            
-            // 次のカードを表示
-            projectCards[currentIndex].classList.add('active');
-        }, 400);
-    }
-    
-    // 3秒間隔でスライドを実行
-    setInterval(showNextProject, 3000);
-}
-
-// ページ読み込み時にスライダーを初期化
-document.addEventListener('DOMContentLoaded', function() {
-    initProjectSlider();
-});
-
