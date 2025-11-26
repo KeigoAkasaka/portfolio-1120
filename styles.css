@@ -260,8 +260,7 @@ section {
 }
 
 .project-card {
-  white-space: nowrap;
-  overflow-x: auto;
+  /* white-space, overflowの指定を削除して折り返しが効くようにする */
 }
 
 /* アニメーション関連の不要なcssを除去 */
@@ -292,9 +291,11 @@ section {
 }
 
 .project-description {
-    color: var(--text-light);
-    margin-bottom: 1.5rem;
-    line-height: 1.8;
+  color: var(--text-light);
+  margin-bottom: 1.5rem;
+  line-height: 1.8;
+  white-space: normal;
+  overflow: unset;
 }
 
 .project-tech {
