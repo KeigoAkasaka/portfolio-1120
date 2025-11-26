@@ -201,6 +201,10 @@ section {
     background-color: #22d3ee;
 }
 
+.skill-category--ide .skill-tag {
+  background-color: #2dd4bf;
+}
+
 .collab-tools {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -307,6 +311,16 @@ section {
     border-radius: 4px;
     font-size: 0.875rem;
     border: 1px solid var(--border-color);
+}
+
+.project-meta {
+  text-align: left;
+  padding-left: 1.2rem;
+  margin-bottom: 1.2rem;
+}
+.project-meta li {
+  white-space: normal;
+  word-break: break-word;
 }
 
 /* お問い合わせフォームセクション */
